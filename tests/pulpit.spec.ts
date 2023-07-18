@@ -1,12 +1,13 @@
 import { test, expect } from '@playwright/test';
 test.describe("Pulpit tests", () => {
 
-    const userId = 'Login123';
-    const userPassword = 'Qwertyu8';
-
-
+    
+    
     test.beforeEach(async ({ page }, testInfo) => {
-        console.log(`Running ${testInfo.title}`);
+        
+        const userId = 'Login123';
+        const userPassword = 'Qwertyu8';
+
         await page.goto('/');
         await page.getByTestId('login-input').fill(userId);;
         await page.getByTestId('password-input').fill(userPassword);
