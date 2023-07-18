@@ -6,8 +6,6 @@ import { PaymentPage } from '../pages/payment.page';
 
 test.describe("Pulpit tests", () => {
 
-
-
   test.beforeEach(async ({ page }) => {
 
     const userId = loginData.userId;
@@ -38,7 +36,6 @@ test.describe("Pulpit tests", () => {
     await payment.transferAmount.fill(transferAmount);
     await payment.buttomExecuteTranfer.click();
     await payment.buttonClose.click();
-
     // Assert
     await expect(payment.messagesInfo).toHaveText(expectedMessage)
   });
