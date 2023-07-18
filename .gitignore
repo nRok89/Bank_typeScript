@@ -1,2 +1,2 @@
 playwright-report/index.html
-.gitignore
+tests/day2.spec.ts

@@ -17,8 +17,6 @@ test.describe("User login to Bank", () => {
 
   test('login with correct credentials', async ({ page }) => {
 
-    //Arrange
-
     // Act
     await page.getByTestId('login-input').fill(userId);
     await page.getByTestId('password-input').fill(userPassword);
@@ -32,8 +30,11 @@ test.describe("User login to Bank", () => {
   test('Unsuccessful login with too short login name', async ({ page }) => {
 
 
+    //Arrange
+    const tooShortUserName = 'Qwert'
+
     // Act
-    await page.getByTestId('login-input').fill('sdasdw');
+    await page.getByTestId('login-input').fill(tooShortUserName);
     await page.getByTestId('password-input').fill(userPassword);
 
     // Assert
@@ -43,8 +44,10 @@ test.describe("User login to Bank", () => {
 
   test('Unsuccessful login with too short password', async ({ page }) => {
 
+    // Arrange
+    const tooShortUserPassword = 'Qwert'
     // Act
-    await page.getByTestId('login-input').fill(userId);
+    await page.getByTestId('login-input').fill(tooShortUserPassword);
     await page.getByTestId('password-input').fill('dsad');
     await page.getByTestId('password-input').blur();
 

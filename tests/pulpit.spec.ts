@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
 test.describe("Pulpit tests", () => {
 
-    
-    
+
+
     test.beforeEach(async ({ page }, testInfo) => {
-        
+
         const userId = 'Login123';
         const userPassword = 'Qwertyu8';
 
@@ -20,6 +20,7 @@ test.describe("Pulpit tests", () => {
         const receiverID = '2';
         const transferAmount = '168,00';
         const transferName = 'Cinema ticket';
+
         // Act
         await page.locator('#widget_1_transfer_receiver').selectOption(receiverID);
         await page.locator('#widget_1_transfer_amount').fill(transferAmount);
