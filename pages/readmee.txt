@@ -1,0 +1,3 @@
+AQB8uw6Zflr5tSWy_x2qQ_KzNkKMjPg8mzaLgT6GwdlNSWHeqdMkf4P3TJjgnB2KPUCrSovPKc5UJw9DGdcOgsgmN7TYwpoWOdP4qpD63_i6SBN9lGZJKoFfjLlVNQ_zpR8
+
+playlist-modify-public, playlist-modify-private,playlist-modify-public,playlist-modify-private,playlist-read-private,user-top-read
